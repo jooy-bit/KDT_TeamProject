@@ -6,7 +6,9 @@ DROP TABLE KDT_SELLLIST;
 DROP TABLE kdt_images;
 DROP TABLE KDT_MEMBER; 
 
-
+ alter
+ 
+ 
 
 CREATE  Table kdt_member (
   id varchar2(100) PRIMARY KEY,
