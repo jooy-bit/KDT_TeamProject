@@ -3,8 +3,6 @@ package controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import controller.sell.SellListController;
-
 public class RequestControllerMapping {
 	private static final Map<RequestKeyValue,Controller> mapping = new HashMap<>();
 	
@@ -49,8 +47,8 @@ public class RequestControllerMapping {
 //		mapping.put(new RequestKeyValue("/book/upload", "POST"), new ApiNewBookImageUploadController());
 //		mapping.put(new RequestKeyValue("/book/list", "GET"), new NewBookListController());
 
-		//상품목록
-		mapping.put(new RequestKeyValue("/fleamarket/detail","GET"), new SellListController());
+		//책장
+//		mapping.put(new RequestKeyValue("/book/bookcase","GET"), new BookCaseListController());
 //		mapping.put(new RequestKeyValue("/pay/success","GET"), new BookCasePayRequestSuccessController());
 //		mapping.put(new RequestKeyValue("/pay/fail","GET"), new BookCasePayRequestFailController());
 		//추가
