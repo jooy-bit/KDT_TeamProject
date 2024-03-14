@@ -6,10 +6,8 @@
 <head>
 <meta charset="UTF-8">
 <title>중고마켓</title>
-<link rel="shortcut icon" type="image/x-icon" href="assets/images/타이틀이미지.svg">
-<!-- <link rel="stylesheet" href="assets/css/pumpkin.css"> -->
-
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/index.css">
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/타이틀이미지.png">
+<link rel="stylesheet" href="assets/css/pumpkin.css">
 </head>
 <body>
 	<%@ include file="./layout/header.jsp" %>
@@ -29,7 +27,6 @@
 			<a href=""><button class="content-button">
 			<span class="button-text">실시간 중고거래 보기</span>
 			</button></a>
-			
 		</div><!--content2  -->
 	</div>
 	<div class="content3">

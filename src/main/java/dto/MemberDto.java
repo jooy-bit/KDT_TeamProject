@@ -15,7 +15,6 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
-
 public class MemberDto {
 	private String id;
 	@Setter
