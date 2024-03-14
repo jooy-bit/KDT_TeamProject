@@ -13,7 +13,7 @@
 		<meta http-equiv="Expires" content="0">
 		<link rel="stylesheet" href="../assets/css/main.css" />
   		<link rel="stylesheet" href="../css/layout.css" />
-		<link rel="stylesheet" href="${pageContext.request.contextPath}/css/list.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}communityFront/css/list.css">
 		<script src="https://kit.fontawesome.com/352c53403e.js" crossorigin="anonymous"></script>
 </head>
 <body class="is-preload">

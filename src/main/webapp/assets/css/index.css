@@ -10,63 +10,7 @@ body{
 *{
 	font-family: '당근';	
 }
-.navbar{
-	display: flex;
-	background: white;
-	width: 100%;
-	top:0;
-	height: 4em;
-	display: flex;
-	flex-direction: row;
-	position: fixed;
-}
-.nav_div{
-	width: 100%;
-	margin:auto;
-	background: white;
-}
 
-.nav_content_in{
-	float: left;
-	list-style:none;
-	margin-left: 2%;
-	justify-content: center;
-	align-items: center;
-}
-.nav_button{
-	color: #4d5159;
-	font-style: normal;
-	font-weight: 700;
-	font-size:large;
-	background-color: white;
-	border: none;
-	padding: 0.6rem 0.2rem
-	}
-.nav_button:hover{
-	opacity: 0.6;
-	cursor: pointer;
-}
-.nav_right_button{
-	/* float: right; */
-	text-align : right;
-	color: #4d5159;
-	font-style: normal;
-	font-weight: 700;
-	height: 2.5rem;
-	background-color: white;
-	margin-left:1rem;
-	margin-right:1rem;
-	padding: 0.6rem 0.2rem;
-	border: 2px solid #ffffff;
-	border-radius: 0.2rem;
-	padding-left: 0.7rem;
-    padding-right: 0.7rem;
-    padding-top: 0.4rem;
-	}
-.nav_right_button:hover{
-	background: #F6F7F9;
-	cursor: pointer;
-}
 .content1{
 	background: #FFFAE0;
 	width: auto;
@@ -173,12 +117,7 @@ body{
     display: inline-block;
     margin-top: 0.5rem;
     margin-right: 10px;
-  /*  한기전이 씀*/
- /*   width : 280px;
-   margin-bottom:20px;
-   background-color: #FF9C27;
-   color: white;
-   font-weight: 600;  */
+
 }  
 .content-button:hover{
 	background: #DEE2E6;
@@ -381,11 +320,3 @@ body{
 .제작자:hover{
 	text-decoration: underline;
 }
-
-.container-btn{
-	text-align: right;
-	margin-right: 10rem;
-	
-	
-}
-

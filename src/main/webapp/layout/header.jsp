@@ -1,9 +1,86 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!-- Header -->
-<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/pumpkin.css">
-<div id="header">
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face {
+	font-family:'당근';
+	src: url('당근.ttf') format('truetype');
+}
+*{
+	font-family: '당근';	
+}
+
+.nav_div{
+	width: 100%;
+	margin:auto;
+	background: white;
+}
+
+.nav_content_in{
+	float: left;
+	list-style:none;
+	margin-left: 2%;
+	justify-content: center;
+	align-items: center;
+}
+.nav_button{
+	color: #4d5159;
+	font-style: normal;
+	font-weight: 700;
+	font-size:large;
+	background-color: white;
+	border: none;
+	padding: 0.6rem 0.2rem
+	}
+.nav_button:hover{
+	opacity: 0.6;
+	cursor: pointer;
+}
+.nav_right_button{
+	/* float: right; */
+	text-align : right;
+	color: #4d5159;
+	font-style: normal;
+	font-weight: 700;
+	height: 2.5rem;
+	background-color: white;
+	margin-left:1rem;
+	margin-right:1rem;
+	padding: 0.6rem 0.2rem;
+	border: 2px solid #ffffff;
+	border-radius: 0.2rem;
+	padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.4rem;
+	}
+.nav_right_button:hover{
+	background: #F6F7F9;
+	cursor: pointer;
+}
+.navbar{
+	display: flex;
+	background: white;
+	width: 100%;
+	top:0;
+	height: 4em;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+}
+.container-btn{
+	text-align: right;
+	margin-right: 10rem;
+}
+</style>
+</head>
+<body>
+	<div id="header">
 	<nav class='navbar'>
 		<!-- 중고거래 / 인기거래 / 동네이야기 / 공지사항 / 마이페이지  -->
 		<nav class='nav_div'>
@@ -32,6 +109,5 @@
 		</nav>
 	</nav>
 </div>
-<style>
-
-</style>
+</body>
+</html>
