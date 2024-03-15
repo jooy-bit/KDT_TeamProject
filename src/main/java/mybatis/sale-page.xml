@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="sale-page">
+ 
+ 	<!-- category 특정 게시물 검색 -->
+ 	<select id="getList" resultType="dto.sellList" 
+ 			parameterType="dto.Paging" >
+ 		SELECT * FROM KDT_SELLLIST ks
+ 		<if test="category !=null"> 		
+ 		 WHERE CATEGORY =#{category}
+ 		</if>
+ 	</select>
+ 
+ 	<!-- category 특정 게시물 개수 -->
+ 	<select id="count" resultType="int" 
+ 			parameterType="java.util.Map" >
+ 		SELECT COUNT(*)  FROM KDT_SELLLIST ks
+ 		<if test="category !=null"> 		
+ 		 WHERE CATEGORY =#{category}
+ 		</if>
+ 	</select>
+ 	
+ 	<!-- code로 특정 게시물 검색 -->
+ 	<select id="getOne" parameterType="int" resultType="dto.sellList">
+ 		SELECT * 
+		FROM KDT_SELLLIST ks
+		WHERE PDT_CODE = #{idx} 
+ 	</select>
+ 	
+ 	<!-- insert 수정해야함 -->
+ 	<insert id="insert" parameterType="dto.sellList">
+ 		INSERT INTO KDT_SELLLIST ks 
+ 		VALUES (#{sell_id},#{category},seq)
+ 	</insert>
+ 	
+ 	<!-- update 수정해야함 -->
+ 	<update id="update" parameterType="dto.sellList">
+ 		UPDATE notice
+ 		SET title=#{title},
+ 			content=#{content},
+ 			attachFile=#{attachFile,jdbcType=VARCHAR},
+ 			uploadFile=#{uploadFile,jdbcType=VARCHAR}
+		WHERE idx = #{idx}
+ 	</update>
+ 	
+ 	<!-- delete 수정해야함 -->
+ 	<delete id="delete" parameterType="int">
+ 		DELETE FROM notice WHERE idx=#{idx}
+ 	</delete>
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
